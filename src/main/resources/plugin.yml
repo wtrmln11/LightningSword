@@ -1,0 +1,35 @@
+name: LightningSword
+version: 1.0
+main: com.wtrmln.LightningSwordPlugin
+api-version: 1.21
+commands:
+  cooldown:
+    description: Check or set the cooldown for Lightning Sword
+    usage: /<command> [seconds]
+    permission: lightning.command.cooldown
+    permission-message: You do not have permission to set or check the cooldown.
+
+  craft:
+    description: Enable or disable Lightning Sword crafting
+    usage: /<command> lightningsword <enable|disable>
+    permission: lightning.command.craft
+    permission-message: You do not have permission to enable/disable crafting.
+
+  lightning:
+    description: Toggle manual lightning mode for the player
+    usage: /<command>
+    permission: lightning.command.lightning
+    permission-message: You do not have permission to toggle manual lightning mode.
+
+permissions:
+  lightning.command.cooldown:
+    description: Allows setting or checking cooldowns
+    default: op
+
+  lightning.command.craft:
+    description: Allows enabling or disabling Lightning Sword crafting
+    default: op
+
+  lightning.command.lightning:
+    description: Allows toggling manual lightning mode
+    default: op
